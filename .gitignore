@@ -68,7 +68,6 @@ yarn-error.log
 
 .vscode/.react/
 
-lingui.config.js
 todo
 dist
 
