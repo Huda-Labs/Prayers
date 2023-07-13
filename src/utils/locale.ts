@@ -29,3 +29,14 @@ function getPreferredLocale(): string {
   }
   return locale;
 }
+
+declare global {
+  interface String {
+    capitalizeFirstLetter(): string;
+  }
+}
+
+// Implement the function
+String.prototype.capitalizeFirstLetter = function (this: string): string {
+  return this.charAt(0).toUpperCase() + this.slice(1);
+};

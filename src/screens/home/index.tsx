@@ -36,6 +36,7 @@ import {
 } from '@/utils/date';
 import {askForLocationService} from '@/utils/dialogs';
 import {askPermissions} from '@/utils/permission';
+import CountDown from '@/components/countdown_timer';
 
 type DayDetails = {
   dateString: string;
@@ -136,11 +137,9 @@ export function Home() {
         <HStack alignItems="center">
           <Box p={4}>
             <Text fontSize="xl" bold>
-              {getNextPrayer()?.prayer.toUpperCase()}
+              {getNextPrayer()?.prayer.capitalizeFirstLetter()}
             </Text>
-            <Text fontSize="xs">
-              {getNextPrayer()?.calculatedFrom.getMilliseconds()}
-            </Text>
+            <CountDown date={getNextPrayer()?.date.toISOString()} />
           </Box>
         </HStack>
 
