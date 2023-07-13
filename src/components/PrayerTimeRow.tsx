@@ -1,4 +1,4 @@
-import {Flex, Spacer, Text, HStack} from 'native-base';
+import {Flex, Text, Stack, Center, View} from 'native-base';
 import {memo} from 'react';
 import {NonPrayer, Prayer, translatePrayer} from '@/adhan';
 import {MutedIcon} from '@/assets/icons/material_icons/muted';
@@ -21,24 +21,57 @@ function PrayerTimeRow({
     <Flex
       direction="row"
       width="100%"
-      py="2"
+      py="3"
       align="center"
-      borderColor={active ? 'yellow.300' : 'coolGray.400'}
+      borderColor={active ? 'yellow.300' : 'red.100'}
       borderRadius="md"
-      borderWidth="2"
+      borderWidth="0"
       borderStyle={NonPrayer.includes(prayer) ? 'dotted' : 'solid'}
-      marginBottom="3"
+      marginBottom="0"
+      marginTop="0"
       _light={{
-        bg: active ? 'yellow.100' : null,
+        bg: active ? 'yellow.300' : null,
+      }}
+      _dark={{
+        bg: active ? '#FFDC75' : null,
       }}
       padding="4">
-      <HStack alignItems="center">
-        <Text>{translatePrayer(prayer)}</Text>
-        {active && isActiveDismissed && <MutedIcon mx="1"></MutedIcon>}
-      </HStack>
-
-      <Spacer />
-      {<Text>{date ? getTime(date) : '--:--'}</Text>}
+      <Stack direction="row" justifyContent="space-between" width="100%">
+        <View width="1/3" alignSelf="flex-start">
+          {active && isActiveDismissed && <MutedIcon mx="2"></MutedIcon>}
+          <Text
+            _dark={{
+              fontWeight: active ? 'bold' : 'normal',
+              color: active ? 'black' : 'grey',
+            }}>
+            {translatePrayer(prayer)}
+          </Text>
+        </View>
+        <Center width="1/4">
+          {
+            <Text
+              fontSize="xs"
+              _dark={{
+                fontWeight: active ? 'bold' : 'normal',
+                color: active ? 'black' : 'grey',
+              }}>
+              {date ? getTime(date) : '--:--'}
+            </Text>
+          }
+        </Center>
+        <Center width="1/4">
+          {
+            <Text
+              fontSize="xs"
+              _dark={{
+                fontWeight: active ? 'bold' : 'normal',
+                color: active ? 'black' : 'grey',
+              }}>
+              {date ? getTime(date) : '--:--'}
+            </Text>
+          }
+        </Center>
+      </Stack>
     </Flex>
   );
 }

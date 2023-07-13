@@ -109,6 +109,14 @@ export function App(): JSX.Element {
     return <Intro></Intro>;
   }
 
+  const getBackgroundColor = () => {
+    if (isDarkMode) {
+      return DarkTheme.colors.background;
+    } else {
+      return DefaultTheme.colors.background;
+    }
+  };
+
   return (
     <NavigationContainer
       ref={navigationRef}
@@ -117,6 +125,7 @@ export function App(): JSX.Element {
       <Stack.Navigator
         screenOptions={{
           headerTitle: TranslatedHeaderTitle,
+          headerStyle: {backgroundColor: getBackgroundColor()},
           animation: 'fade',
         }}>
         <Stack.Group screenOptions={{headerShown: false}}>
@@ -130,7 +139,9 @@ export function App(): JSX.Element {
           <Stack.Screen
             name="QadaCounter"
             component={QadaCounter}
-            options={{headerRight: QadaCounterHeaderRight}}
+            options={{
+              headerRight: QadaCounterHeaderRight,
+            }}
           />
           <Stack.Screen name="QiblaFinder" component={QiblaFinder} />
           <Stack.Screen

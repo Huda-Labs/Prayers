@@ -1,15 +1,24 @@
 import {t} from '@lingui/macro';
-import {Box, Button, Flex, HStack, ScrollView, Text} from 'native-base';
-import {useEffect, useState} from 'react';
+import {
+  Box,
+  Button,
+  Center,
+  ChevronLeftIcon,
+  ChevronRightIcon,
+  Flex,
+  HStack,
+  ScrollView,
+  Spacer,
+  Text,
+  ThreeDotsIcon,
+} from 'native-base';
+import {useCallback, useEffect, useState} from 'react';
+import {ImageBackground, RefreshControl} from 'react-native';
 import {useStore} from 'zustand';
 import {shallow} from 'zustand/shallow';
-import {getPrayerTimes} from '@/adhan';
+import {getCurrentPrayer, getNextPrayer, getPrayerTimes} from '@/adhan';
 import {AddCircleIcon} from '@/assets/icons/material_icons/add_circle';
 import {ExploreIcon} from '@/assets/icons/material_icons/explore';
-import {RestoreIcon} from '@/assets/icons/material_icons/restore';
-import {SettingsSharpIcon} from '@/assets/icons/material_icons/settings_sharp';
-import {UpdateIcon} from '@/assets/icons/material_icons/update';
-import Divider from '@/components/Divider';
 import PrayerTimesBox from '@/components/PrayerTimesBox';
 import {isRTL} from '@/i18n';
 
@@ -19,7 +28,13 @@ import {CachedPrayerTimes} from '@/store/adhan_calc_cache';
 import {homeStore} from '@/store/home';
 import {settings} from '@/store/settings';
 
-import {getArabicDate, getDayName, getFormattedDate} from '@/utils/date';
+import {
+  getArabicDate,
+  getArabicDateInEng,
+  getDayName,
+  getFormattedDate,
+} from '@/utils/date';
+import {askForLocationService} from '@/utils/dialogs';
 import {askPermissions} from '@/utils/permission';
 
 type DayDetails = {
@@ -86,54 +101,78 @@ export function Home() {
     updateCurrentDate();
   }, [impactfulSettings, updateCurrentDate]);
 
-  return (
-    <ScrollView>
-      <Box safeArea flex={1} alignItems="center">
-        <HStack
-          mb="-3"
-          px="3"
-          justifyContent="space-between"
-          alignItems="center"
-          w="100%">
-          <HStack alignItems="center">
-            <Text>{day.dateString}</Text>
-          </HStack>
+  const askForGps = useCallback(async () => {
+    await askForLocationService(
+      t`Qibla finder needs location service. If not enabled, location from app settings will be used.`,
+    );
+  }, []);
 
-          <HStack alignItems="center">
-            <Button
-              p="2"
-              marginLeft="3"
-              variant="ghost"
-              onPress={() => {
-                navigate('QadaCounter');
-              }}>
-              <AddCircleIcon size="2xl" />
-            </Button>
-            <Button
-              p="2"
-              variant="ghost"
-              onPress={() => {
-                navigate('QiblaFinder');
-              }}>
-              <ExploreIcon size="2xl" />
-            </Button>
-            <Button
-              p="2"
-              marginRight="-3"
-              variant="ghost"
-              onPress={() => {
-                navigate('Settings');
-              }}>
-              <SettingsSharpIcon size="2xl" />
-            </Button>
-          </HStack>
+  const navigateToQiblaCompass = useCallback(async () => {
+    await askForGps();
+    navigate('QiblaCompass');
+  }, [askForGps]);
+
+  const [refreshing, setRefreshing] = useState(false);
+
+  const onRefresh = useCallback(() => {
+    setRefreshing(true);
+    setTimeout(() => {
+      setRefreshing(false);
+    }, 2000);
+  }, []);
+
+  return (
+    <ScrollView
+      refreshControl={
+        <RefreshControl refreshing={refreshing} onRefresh={onRefresh} />
+      }>
+      <HStack
+        px="2"
+        mt="-3"
+        justifyContent="space-between"
+        alignItems="center"
+        w="100%"
+        zIndex={100}>
+        <HStack alignItems="center">
+          <Box p={4}>
+            <Text fontSize="xl" bold>
+              {getNextPrayer()?.prayer.toUpperCase()}
+            </Text>
+            <Text fontSize="xs">
+              {getNextPrayer()?.calculatedFrom.getMilliseconds()}
+            </Text>
+          </Box>
         </HStack>
-        <Divider
-          borderColor="coolGray.300"
-          mb="-2"
-          _text={{fontWeight: 'bold'}}>
-          {day.dayName}
-        </Divider>
+
+        <HStack alignItems="center">
+          <Button
+            p="2"
+            variant="ghost"
+            onPress={() => {
+              navigateToQiblaCompass();
+            }}>
+            <ExploreIcon color="white" size="2xl" />
+          </Button>
+          <Button
+            p="2"
+            marginRight="1"
+            variant="ghost"
+            onPress={() => {
+              navigate('Settings');
+            }}>
+            <ThreeDotsIcon size="xl" color="white" />
+          </Button>
+        </HStack>
+      </HStack>
+      <Box safeArea flex={1} alignItems="center">
+        <Box w="100%">
+          <Box flex="1" alignItems="flex-end" p={4}>
+            <Text fontSize="xs" bold>
+              Masjid E Bilal
+            </Text>
+            <Text fontSize="xxs">Manchester</Text>
+          </Box>
+        </Box>
         <HStack
           mt="2"
           justifyContent="space-between"
@@ -142,36 +181,33 @@ export function Home() {
           direction={isRTL ? 'row-reverse' : 'row'}>
           <Button variant="ghost" onPress={decreaseCurrentDateByOne}>
             <Flex direction={isRTL ? 'row' : 'row-reverse'} alignItems="center">
-              <Text fontSize="xs" mx="1">{t`Prev Day`}</Text>
-              <RestoreIcon size="xl" />
+              <ChevronLeftIcon size="xl" />
             </Flex>
           </Button>
-          {!day.isToday && (
-            <Button
-              onPress={resetCurrentDate}
-              variant="outline"
-              py="2"
-              px="1"
+
+          <Button onPress={resetCurrentDate} variant="ghost" py="2" px="1">
+            <Flex
+              alignItems="center"
               flexShrink={1}
               _text={{
                 adjustsFontSizeToFit: true,
-                fontSize: 'xs',
+                fontSize: 'sm',
                 noOfLines: 1,
                 _light: {
-                  color: 'primary.700',
+                  color: 'yellow.600',
                 },
                 _dark: {
-                  color: 'primary.300',
+                  color: 'yellow.300',
                 },
-              }}
-              borderColor="primary.500">
-              {t`Show Today`}
-            </Button>
-          )}
+              }}>
+              {day.arabicDate}
+              <Text fontSize="xxs">{day.dateString}</Text>
+            </Flex>
+          </Button>
+
           <Button variant="ghost" onPress={increaseCurrentDateByOne}>
             <Flex direction={isRTL ? 'row' : 'row-reverse'} alignItems="center">
-              <UpdateIcon size="xl" />
-              <Text mx="1" fontSize="xs">{t`Next Day`}</Text>
+              <ChevronRightIcon size="xl" />
             </Flex>
           </Button>
         </HStack>
@@ -179,9 +215,36 @@ export function Home() {
           prayerTimes={prayerTimes}
           settings={impactfulSettings}
         />
-        <Text key={impactfulSettings.SELECTED_ARABIC_CALENDAR} mb="3">
-          {day.arabicDate}
-        </Text>
+        <HStack space={3} justifyContent="center" mb="5" mt="5">
+          <Button
+            h="40"
+            w="45%"
+            bg="gray.200"
+            rounded="md"
+            shadow="1"
+            onPress={() => {
+              return navigate('QadaCounter');
+            }}>
+            <AddCircleIcon size="5xl" />
+            <Text color="grey.400" fontSize="md">
+              Quza
+            </Text>
+          </Button>
+          <Button
+            h="40"
+            w="45%"
+            bg="gray.200"
+            rounded="md"
+            shadow="1"
+            onPress={() => {
+              return navigate('QadaCounter');
+            }}>
+            <AddCircleIcon size="5xl" />
+            <Text color="grey.400" fontSize="md">
+              Tasbi
+            </Text>
+          </Button>
+        </HStack>
       </Box>
     </ScrollView>
   );

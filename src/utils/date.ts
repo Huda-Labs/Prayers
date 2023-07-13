@@ -230,6 +230,34 @@ export function getArabicMonthName(date: Date) {
   }).format(date);
 }
 
+export function getArabicDateInEng(date: Date) {
+  const options: Intl.DateTimeFormatOptions = {
+    day: 'numeric',
+    month: 'long',
+    year: 'numeric',
+    calendar: 'islamic',
+    timeZone: 'UTC',
+  };
+
+  const formatter = new Intl.DateTimeFormat('en', options);
+  const formattedDate = formatter.formatToParts(date);
+
+  let hijriDate = formattedDate.reduce((acc, part) => {
+    switch (part.type) {
+      case 'year':
+        return acc + part.value + ' AH';
+      case 'month':
+        return acc + part.value + ' ';
+      case 'day':
+        return part.value + ' ' + acc;
+      default:
+        return acc;
+    }
+  }, '');
+
+  return hijriDate.trim();
+}
+
 export function getArabicDate(date: Date) {
   const calendar = getArabicCalendarType();
 

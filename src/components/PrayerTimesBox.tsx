@@ -52,7 +52,15 @@ function PrayerTimesBox({prayerTimes, settings}: PrayerTimesBoxProps) {
   }
 
   return (
-    <Box display="flex" flexDirection="column" px="3" py="2">
+    <Box
+      display="flex"
+      flexDirection="column"
+      px="3"
+      py="1"
+      mx="3"
+      shadow="1"
+      backgroundColor="white"
+      borderRadius={10}>
       {visiblePrayerTimes.map(prayer => (
         <PrayerTimeRow
           key={prayer}
