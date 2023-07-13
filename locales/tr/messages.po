@@ -6,6 +6,12 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: @lingui/cli\n"
 "Language: tr\n"
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Plural-Forms: \n"
 
 #: src/screens/settings_reminders/edit_reminder_modal.tsx:134
 msgid "10 min"
@@ -46,11 +52,6 @@ msgstr "Abyad (Beyazlık)"
 #: src/screens/qibla_finder_compass/accuracy_indicator.tsx:37
 msgid "Accuracy"
 msgstr "Doğruluk"
-
-#: fastlane/update/update.ts:41
-#: website/src/_includes/home.tsx:79
-msgid "Ad-Free"
-msgstr "Reklamsız"
 
 #: src/screens/settings_fix_common_problems/adaptive_charging_toggle.tsx:15
 msgid "Adaptive Charging"
@@ -100,41 +101,13 @@ msgstr "Gelişmiş hesaplama ayarları"
 msgid "Ahmer"
 msgstr "Ahmer (Kızıllık)"
 
-#. Don't translate Al-Azan name
-#: website/src/_includes/home.tsx:36
-#: website/src/_includes/privacy-policy.tsx:13
-msgid "Al-Azan"
-msgstr "Al-Azan"
-
-#. Max. 30 characters
-#: fastlane/update/update.ts:27
-msgid "Al-Azan - Prayer Times"
-msgstr "Al-Azan - Namaz Vakitleri"
-
-#: website/src/_includes/privacy-policy.tsx:61
-msgid "Al-Azan is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU Affero General Public License for more details."
-msgstr "Al-Azan, yararlı olacağı umuduyla, ancak HERHANGİ BİR GARANTİ OLMAKSIZIN; hatta ZIMNİ TİCARİ ELVERİŞLİLİK veya BELİRLİ BİR AMACA UYGUNLUK garantisi olmaksızın dağıtılmaktadır. Daha fazla ayrıntı için GNU Affero Genel Kamu Lisansına bakınız."
-
-#: website/src/_includes/privacy-policy.tsx:56
-msgid "Al-Azan is free software: you can redistribute it and/or modify it under the terms of the GNU Affero General Public License (v3.0) as published by the Free Software Foundation."
-msgstr "Al-Azan özgür bir yazılımdır: Özgür Yazılım Vakfı tarafından yayınlanan GNU Affero Genel Kamu Lisansı (v3.0) koşulları altında yeniden dağıtabilir ve/veya değiştirebilirsiniz."
-
 #: src/utils/permission.ts:165
 msgid "Alarms Permission"
 msgstr "Alarm izni"
 
-#: website/src/_includes/privacy-policy.tsx:39
-msgid "All data provided to Al-Azan is only stored locally in your device. Your data is not uploaded anywhere. The developers of Al-Azan do not have access to it. Your data is not shared with any third parties. Al-Azan does not include any advertisement libraries or any 3rd party tracking (analytics) code, such as Google Analytics or Facebook SDK."
-msgstr "Al-Azan'a sağlanan tüm veriler yalnızca cihazınızda yerel olarak saklanır. Verileriniz hiçbir yere yüklenmez. Al-Azan'ın geliştiricilerinin bu verilere erişimi yoktur. Verileriniz herhangi bir üçüncü tarafla paylaşılmaz. Al-Azan, herhangi bir reklam kütüphanesi veya Google Analytics veya Facebook SDK gibi herhangi bir 3. taraf izleme (analitik) kodu içermez."
-
 #: src/screens/settings_adhan/index.tsx:76
 msgid "An error occured while playing the current track"
 msgstr "Geçerli ses çalınırken bir hata oluştu"
-
-#: fastlane/update/update.ts:39
-#: website/src/_includes/home.tsx:77
-msgid "App features"
-msgstr "Uygulama özellikleri"
 
 #: src/screens/settings_adhan/adhan_list_item.tsx:103
 msgid "Are you sure you want to delete \"{0}\" ?"
@@ -160,7 +133,6 @@ msgstr "En az bir namaz vakti gösterilmelidir"
 #: src/screens/settings_calculation/calendar_settings.tsx:44
 #: src/utils/ramadan.ts:74
 #: src/utils/ramadan.ts:95
-#: website/src/_includes/privacy-policy.tsx:48
 msgid "Attention"
 msgstr "Dikkat"
 
@@ -320,11 +292,6 @@ msgstr "Reddet"
 msgid "Diyanet İşleri Başkanlığı, Turkey"
 msgstr "Diyanet İşleri Başkanlığı, Türkiye"
 
-#: fastlane/update/update.ts:43
-#: website/src/_includes/home.tsx:80
-msgid "Doesn't use any kind of trackers"
-msgstr "Herhangi bir izleyici kullanmaz"
-
 #: src/utils/permission.ts:44
 #: src/utils/permission.ts:169
 #: src/utils/permission.ts:201
@@ -447,11 +414,6 @@ msgstr "Gizlensin mi?"
 msgid "Hide Prayer Times"
 msgstr "Namaz vakitlerini gizle"
 
-#: fastlane/update/update.ts:59
-#: website/src/_includes/home.tsx:94
-msgid "Hide times you don't need"
-msgstr "İhtiyacınız olmayan zamanları gizleme"
-
 #: src/screens/qibla_finder_compass/accuracy_indicator.tsx:26
 msgid "High"
 msgstr "Yüksek"
@@ -465,18 +427,8 @@ msgid "Highlight current prayer"
 msgstr "Mevcut duayı vurgulayın"
 
 #: src/screens/settings_about/index.tsx:34
-#: website/src/_data/navigation.ts:2
 msgid "Home"
 msgstr "Anasayfa"
-
-#: fastlane/update/update.ts:63
-#: website/src/_includes/home.tsx:96
-msgid "Homescreen and notification Widgets"
-msgstr "Ana ekran ve bildirim Widget'lerı"
-
-#: website/src/_includes/privacy-policy.tsx:43
-msgid "However, When using online services, such as searching for location coordinates by name or Qibla map, app may transmit minimum necessary data that may or may not uniquely identify you. Please keep this in mind while using the app."
-msgstr "Ancak, isme göre konum koordinatları veya kıble haritası aramak gibi çevrimiçi hizmetleri kullanırken, uygulama sizi benzersiz bir şekilde tanımlayabilecek veya tanımlamayabilecek minimum gerekli verileri iletebilir. Lütfen uygulamayı kullanırken bunu aklınızda bulundurun."
 
 #: src/screens/qibla_finder/index.tsx:98
 msgid "I Understand"
@@ -489,10 +441,6 @@ msgstr "Önemli"
 #: src/screens/settings_notifications/notify_next_adhan_setting.tsx:22
 msgid "If enabled, when a notification is shown, it will contain info for the next prayer time"
 msgstr "Etkinleştirilirse, bir sonraki namaz vakti bilgisini bildirim ekranından gösterir"
-
-#: website/src/_includes/privacy-policy.tsx:49
-msgid "If you have activated “Backup & Reset” in your phone settings (Settings / Backup & Reset / Back up my data), you should be aware that Android itself (not Al-Azan) will periodically save a copy of your phone’s data in Google’s servers. This allows Android to recover your data in case your device gets damaged, or you purchase a new device. The developers of Al-Azan do not have access to this data."
-msgstr "Telefon ayarlarınızda \"Yedekle ve Sıfırla\" seçeneğini etkinleştirdiyseniz (Ayarlar / Yedekle ve Sıfırla / Verilerimi yedekle), Android'in kendisinin (Al-Azan'ın değil) telefonunuzun verilerinin bir kopyasını periyodik olarak Google sunucularına kaydedeceğini bilmelisiniz. Bu, cihazınızın hasar görmesi ya da yeni bir cihaz satın almanız durumunda Android'in verilerinizi kurtarmasını sağlar. Al-Azan geliştiricilerinin bu verilere erişimi yoktur."
 
 #: src/screens/settings_fix_common_problems/index.tsx:103
 msgid "If you still had problem with app stopping after some time, please visit dontkillmyapp.com for more solutions."
@@ -534,11 +482,6 @@ msgstr "İnternet bağlantısı"
 #: src/screens/qibla_finder/index.tsx:49
 msgid "Internet connection is necessary for qibla map to work. Please enable your wifi or mobile data and try again."
 msgstr "Kıble haritasının çalışması için internet bağlantısı gereklidir. Lütfen kablosuz ağı veya mobil verinizi etkinleştirin ve tekrar deneyin."
-
-#: fastlane/update/update.ts:69
-#: website/src/_includes/home.tsx:100
-msgid "Is localized in English, Persian, Arabic, Turkish, Indonesian, French, Urdu, Hindi, German, Bosnian, Vietnamese, Bangla"
-msgstr "İngilizce, Farsça, Arapça, Türkçe, Endonezce, Fransızca, Urduca, Hintçe, Almanca, Boşnakça, Vietnamca, Bangla dillerinde yerelleştirilmiştir"
 
 #: src/screens/settings_calculation/calendar_settings.tsx:31
 msgid "Islamic"
@@ -697,8 +640,8 @@ msgstr "Hayır"
 msgid "No Data"
 msgstr "Veri yok"
 
-#: src/components/audio_picker.tsx:415
 #: src/components/AutocompleteInput.tsx:200
+#: src/components/audio_picker.tsx:415
 msgid "No Results"
 msgstr "Sonuç yok"
 
@@ -771,16 +714,6 @@ msgstr "Pil optimizasyon ayarlarını aç"
 msgid "Open Power Manager Settings"
 msgstr "Güç yönetimi ayarlarını aç"
 
-#: fastlane/update/update.ts:71
-#: website/src/_includes/home.tsx:105
-msgid "Open source repository"
-msgstr "Açık kaynak deposu"
-
-#: fastlane/update/update.ts:45
-#: website/src/_includes/home.tsx:81
-msgid "Open-source"
-msgstr "Açık kaynak"
-
 #: src/screens/settings_reminders/edit_reminder_modal.tsx:210
 msgid "Options"
 msgstr "Seçenekler"
@@ -821,45 +754,17 @@ msgstr "Kutuplar için hesaplama yöntemi"
 msgid "Power Manager"
 msgstr "Güç yöneticisi"
 
-#: website/src/_includes/home.tsx:38
-msgid "Prayer Times"
-msgstr "Namaz Vakitleri"
-
 #: src/screens/home/index.tsx:145
 msgid "Prev Day"
 msgstr "Önceki gün"
-
-#: website/src/_data/navigation.ts:5
-#: website/src/_includes/privacy-policy.tsx:19
-#: website/src/_includes/privacy-policy.tsx:37
-msgid "Privacy Policy"
-msgstr "Gizlilik Politikası"
-
-#. Max. 80 characters
-#: fastlane/update/update.ts:16
-#: website/src/_includes/home.tsx:17
-#: website/src/_includes/privacy-policy.tsx:24
-msgid "Privacy-first open-source muslim Adhan (islamic prayer times) and qibla app"
-msgstr "Mahremiyete saygılı açık kaynak Ezan (İslami namaz vakitleri) ve kıble uygulaması"
-
-#: fastlane/update/update.ts:67
-#: website/src/_includes/home.tsx:98
-msgid "Qada counter"
-msgstr "Kaza namazı sayacı"
 
 #: src/adhan/calculation_methods.ts:76
 msgid "Qatar"
 msgstr "Katar"
 
 #: src/screens/qibla_finder_compass/index.tsx:144
-#: website/src/_includes/home.tsx:38
 msgid "Qibla"
 msgstr "Kıble"
-
-#: fastlane/update/update.ts:65
-#: website/src/_includes/home.tsx:97
-msgid "Qibla finder"
-msgstr "Kıble bulucu"
 
 #: src/screens/qibla_finder/index.tsx:24
 msgid "Qibla finder needs location service. If not enabled, location from app settings will be used."
@@ -920,8 +825,8 @@ msgstr "Samsung cihazlarının \"Cihaz Bakımı\" adı verilen kendi özel Güç
 msgid "Saturday"
 msgstr "Cumartesi"
 
-#: src/components/audio_picker.tsx:393
 #: src/components/AutocompleteInput.tsx:166
+#: src/components/audio_picker.tsx:393
 msgid "Search"
 msgstr "Ara"
 
@@ -942,16 +847,6 @@ msgstr "Sabah namazı için farklı Ezan sesi seçme"
 #: src/screens/settings_adhan/index.tsx:226
 msgid "Selecting a name is required"
 msgstr "Bir isim gerekli"
-
-#: fastlane/update/update.ts:49
-#: website/src/_includes/home.tsx:85
-msgid "Set custom Adhan audio"
-msgstr "Özel Ezan sesi ayarlama"
-
-#: fastlane/update/update.ts:61
-#: website/src/_includes/home.tsx:95
-msgid "Set reminders before or after a prayer time"
-msgstr "Dua zamanından önce veya sonra hatırlatıcı ayarlama"
 
 #: src/screens/settings_calculation/index.tsx:170
 msgid "Shafaq"
@@ -1021,11 +916,6 @@ msgstr "Yaklaşan alarm bildirimi gösterilsin mi?"
 msgid "Silent"
 msgstr "Sessiz"
 
-#: fastlane/update/update.ts:74
-#: website/src/_includes/home.tsx:110
-msgid "Since we don't use any kind of tracker or crash analytics, please report any problem or suggestion you have on our github repo"
-msgstr "Herhangi bir izleyici veya çökme analizi kullanmadığımız için, lütfen yaşadığınız herhangi bir sorunu veya önerilerinizi github repomuza bildirin"
-
 #: src/adhan/calculation_methods.ts:82
 msgid "Singapore"
 msgstr "Singapur"
@@ -1033,10 +923,6 @@ msgstr "Singapur"
 #: src/intro/intro.tsx:100
 msgid "Skip"
 msgstr "Atla"
-
-#: website/src/_includes/privacy-policy.tsx:54
-msgid "Software License"
-msgstr "Yazılım Lisansı"
 
 #: src/screens/settings_display/calendar_secondary_settings.tsx:31
 msgid "Solar Hijri"
@@ -1093,10 +979,6 @@ msgstr "Körfez Bölgesi (Dubai)"
 #: src/screens/settings_calculation/calendar_settings.tsx:45
 msgid "The app's lunar calendar is pre-calculated and may not be accurate because it isn't based on moon sightings. This is especially important to note for the start and end of Ramadan."
 msgstr "Uygulamanın ay takvimi önceden hesaplanmıştır ve ay gözlemlerine dayanmadığı için doğru olmayabilir. Bu özellikle Ramazan'ın başlangıcı ve bitişi için önemlidir."
-
-#: website/src/_includes/privacy-policy.tsx:71
-msgid "The text found in this website and in the app may not be accurate in other languages, so in any case, only English version should be considered."
-msgstr "Bu web sitesinde ve uygulamada bulunan metin diğer dillerde doğru olmayabilir, bu nedenle her durumda yalnızca İngilizce sürüm dikkate alınmalıdır."
 
 #: src/screens/settings_display/calendar_secondary_settings.tsx:23
 msgid "The type of calendar that is shown on top of home screen and beside lunar date in widgets"
@@ -1283,15 +1165,6 @@ msgstr "Ana ekranda görünmesini istemediğiniz vakitleri buradan gizleyebilirs
 #: src/screens/settings_widget/hide_widget_prayer_settings.tsx:60
 msgid "You can hide prayer times you don't want to see in the widget here:"
 msgstr "Widget'ta görünmesini istemediğiniz vakitleri buradan gizleyebilirsiniz:"
-
-#: fastlane/update/update.ts:47
-#: website/src/_includes/home.tsx:83
-msgid "You can search for your location offline Or use GPS"
-msgstr "Konumunuzu çevrimdışı arayabilir veya GPS kullanabilirsiniz"
-
-#: website/src/_includes/privacy-policy.tsx:66
-msgid "You should have received a copy of the GNU Affero General Public License along with this program. If not, see https://www.gnu.org/licenses/."
-msgstr "Bu programla birlikte GNU Affero Genel Kamu Lisansının bir kopyasını almış olmalısınız. Değilse, https://www.gnu.org/licenses/ adresine bakın."
 
 #: src/components/audio_picker.tsx:84
 msgid "Your sounds"

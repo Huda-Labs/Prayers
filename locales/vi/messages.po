@@ -6,6 +6,12 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: @lingui/cli\n"
 "Language: vi\n"
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Plural-Forms: \n"
 
 #: src/screens/settings_reminders/edit_reminder_modal.tsx:134
 msgid "10 min"
@@ -46,11 +52,6 @@ msgstr "Abyad"
 #: src/screens/qibla_finder_compass/accuracy_indicator.tsx:37
 msgid "Accuracy"
 msgstr "Độ chính xác"
-
-#: fastlane/update/update.ts:41
-#: website/src/_includes/home.tsx:79
-msgid "Ad-Free"
-msgstr "Không quảng cáo"
 
 #: src/screens/settings_fix_common_problems/adaptive_charging_toggle.tsx:15
 msgid "Adaptive Charging"
@@ -100,41 +101,13 @@ msgstr "Cài đặt Tính toán Nâng cao"
 msgid "Ahmer"
 msgstr "Ahmer"
 
-#. Don't translate Al-Azan name
-#: website/src/_includes/home.tsx:36
-#: website/src/_includes/privacy-policy.tsx:13
-msgid "Al-Azan"
-msgstr "Al-Azan"
-
-#. Max. 30 characters
-#: fastlane/update/update.ts:27
-msgid "Al-Azan - Prayer Times"
-msgstr "Al-Azan - Giờ Cầu Nguyện Salah"
-
-#: website/src/_includes/privacy-policy.tsx:61
-msgid "Al-Azan is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU Affero General Public License for more details."
-msgstr "Al-Azan được phân phối với hy vọng rằng nó sẽ hữu ích, nhưng KHÔNG CÓ BẤT KỲ BẢO HÀNH NÀO; thậm chí không có bảo hành cho KHẢ NĂNG BÁN ĐƯỢC hay PHÙ HỢP CHO MỘT MỤC ĐÍCH CỤ THỂ. Xem Giấy phép Công cộng GNU Affero để biết thêm chi tiết."
-
-#: website/src/_includes/privacy-policy.tsx:56
-msgid "Al-Azan is free software: you can redistribute it and/or modify it under the terms of the GNU Affero General Public License (v3.0) as published by the Free Software Foundation."
-msgstr "Al-Azan là phần mềm miễn phí: bạn có thể phân phối lại và/hoặc sửa đổi nó theo các điều khoản của Giấy phép Công cộng Chung GNU Affero (v3.0) do Tổ chức Phần mềm Miễn phí xuất bản."
-
 #: src/utils/permission.ts:165
 msgid "Alarms Permission"
 msgstr "Quyền Báo Thức"
 
-#: website/src/_includes/privacy-policy.tsx:39
-msgid "All data provided to Al-Azan is only stored locally in your device. Your data is not uploaded anywhere. The developers of Al-Azan do not have access to it. Your data is not shared with any third parties. Al-Azan does not include any advertisement libraries or any 3rd party tracking (analytics) code, such as Google Analytics or Facebook SDK."
-msgstr "Tất cả dữ liệu được cung cấp cho Al-Azan chỉ được lưu trữ cục bộ trong thiết bị của bạn. Dữ liệu này không bị đăng lên bất cứ đâu. Các nhà phát triển của Al-Azan không có quyền truy cập vào nó. Dữ liệu của bạn không bị chia sẻ với bên thứ ba nào. Al-Azan không chứa bất kỳ thư viện quảng cáo hay mã theo dõi (phân tích) nào của bên thứ ba, ví dụ như Google Analytics hay Facebook SDK."
-
 #: src/screens/settings_adhan/index.tsx:76
 msgid "An error occured while playing the current track"
 msgstr "Đã xảy ra lỗi khi phát âm báo hiện tại"
-
-#: fastlane/update/update.ts:39
-#: website/src/_includes/home.tsx:77
-msgid "App features"
-msgstr "Tính năng ứng dụng"
 
 #: src/screens/settings_adhan/adhan_list_item.tsx:103
 msgid "Are you sure you want to delete \"{0}\" ?"
@@ -160,7 +133,6 @@ msgstr "Ít nhất một lần cầu nguyện phải được hiển thị"
 #: src/screens/settings_calculation/calendar_settings.tsx:44
 #: src/utils/ramadan.ts:74
 #: src/utils/ramadan.ts:95
-#: website/src/_includes/privacy-policy.tsx:48
 msgid "Attention"
 msgstr "Chú ý"
 
@@ -320,11 +292,6 @@ msgstr "Bỏ qua"
 msgid "Diyanet İşleri Başkanlığı, Turkey"
 msgstr "Diyanet İşleri Başkanlığı, Thổ Nhĩ Kỳ"
 
-#: fastlane/update/update.ts:43
-#: website/src/_includes/home.tsx:80
-msgid "Doesn't use any kind of trackers"
-msgstr "Không sử dụng bất kỳ trình theo dõi nào"
-
 #: src/utils/permission.ts:44
 #: src/utils/permission.ts:169
 #: src/utils/permission.ts:201
@@ -447,11 +414,6 @@ msgstr "Ẩn?"
 msgid "Hide Prayer Times"
 msgstr "Ẩn Lần Cầu nguyện"
 
-#: fastlane/update/update.ts:59
-#: website/src/_includes/home.tsx:94
-msgid "Hide times you don't need"
-msgstr "Ẩn lần bạn không cần"
-
 #: src/screens/qibla_finder_compass/accuracy_indicator.tsx:26
 msgid "High"
 msgstr "Cao"
@@ -465,18 +427,8 @@ msgid "Highlight current prayer"
 msgstr "Tô sáng giờ cầu nguyện hiện tại"
 
 #: src/screens/settings_about/index.tsx:34
-#: website/src/_data/navigation.ts:2
 msgid "Home"
 msgstr "Trang chủ"
-
-#: fastlane/update/update.ts:63
-#: website/src/_includes/home.tsx:96
-msgid "Homescreen and notification Widgets"
-msgstr "Màn hình chính và Tiện Ích thông báo"
-
-#: website/src/_includes/privacy-policy.tsx:43
-msgid "However, When using online services, such as searching for location coordinates by name or Qibla map, app may transmit minimum necessary data that may or may not uniquely identify you. Please keep this in mind while using the app."
-msgstr "Tuy nhiên, khi sử dụng các dịch vụ trực tuyến, chẳng hạn như tìm kiếm tọa độ vị trí theo tên hoặc bản đồ Qibla, ứng dụng có thể truyền dữ liệu cần thiết tối thiểu có thể hoặc không thể nhận dạng bạn. Hãy ghi nhớ điều này khi sử dụng ứng dụng."
 
 #: src/screens/qibla_finder/index.tsx:98
 msgid "I Understand"
@@ -489,10 +441,6 @@ msgstr "Quan trọng"
 #: src/screens/settings_notifications/notify_next_adhan_setting.tsx:22
 msgid "If enabled, when a notification is shown, it will contain info for the next prayer time"
 msgstr "Nếu bật, khi một thông báo được hiển thị, nó sẽ chứa thông tin cho lần cầu nguyện tiếp theo"
-
-#: website/src/_includes/privacy-policy.tsx:49
-msgid "If you have activated “Backup & Reset” in your phone settings (Settings / Backup & Reset / Back up my data), you should be aware that Android itself (not Al-Azan) will periodically save a copy of your phone’s data in Google’s servers. This allows Android to recover your data in case your device gets damaged, or you purchase a new device. The developers of Al-Azan do not have access to this data."
-msgstr "Nếu bạn đã kích hoạt “Sao lưu & Khôi phục” trong cài đặt điện thoại của mình (Cài đặt / Sao lưu & Khôi phục / Sao lưu dữ liệu của tôi), bạn nên lưu ý rằng chính Android (không phải Al-Azan) sẽ lưu định kỳ một bản sao dữ liệu điện thoại của bạn trên máy chủ của Google. Điều này cho phép Android khôi phục dữ liệu của bạn nếu thiết bị của bạn bị hỏng hoặc bạn mua một thiết bị mới. Các nhà phát triển của Azan không có quyền truy cập dữ liệu này."
 
 #: src/screens/settings_fix_common_problems/index.tsx:103
 msgid "If you still had problem with app stopping after some time, please visit dontkillmyapp.com for more solutions."
@@ -534,11 +482,6 @@ msgstr "Kết nối Internet"
 #: src/screens/qibla_finder/index.tsx:49
 msgid "Internet connection is necessary for qibla map to work. Please enable your wifi or mobile data and try again."
 msgstr "Kết nối Internet là cần thiết để bản đồ qibla hoạt động. Vui lòng bật wifi hoặc dữ liệu di động của bạn và thử lại."
-
-#: fastlane/update/update.ts:69
-#: website/src/_includes/home.tsx:100
-msgid "Is localized in English, Persian, Arabic, Turkish, Indonesian, French, Urdu, Hindi, German, Bosnian, Vietnamese, Bangla"
-msgstr "Được bản địa hóa bằng tiếng Anh, tiếng Ba Tư, tiếng Ả Rập, tiếng Thổ Nhĩ Kỳ, tiếng Indonesia, tiếng Pháp, tiếng Urdu, tiếng Hindi, tiếng Đức, tiếng Bosnia, tiếng Việt, tiếng Bangla"
 
 #: src/screens/settings_calculation/calendar_settings.tsx:31
 msgid "Islamic"
@@ -697,8 +640,8 @@ msgstr "Không"
 msgid "No Data"
 msgstr "Không có dữ liệu"
 
-#: src/components/audio_picker.tsx:415
 #: src/components/AutocompleteInput.tsx:200
+#: src/components/audio_picker.tsx:415
 msgid "No Results"
 msgstr "Không kết quả"
 
@@ -771,16 +714,6 @@ msgstr "Mở cài đặt Tối ưu hóa Pin"
 msgid "Open Power Manager Settings"
 msgstr "Mở cài đặt Trình quản lý Pin"
 
-#: fastlane/update/update.ts:71
-#: website/src/_includes/home.tsx:105
-msgid "Open source repository"
-msgstr "Kho mã nguồn mở"
-
-#: fastlane/update/update.ts:45
-#: website/src/_includes/home.tsx:81
-msgid "Open-source"
-msgstr "Mã nguồn mở"
-
 #: src/screens/settings_reminders/edit_reminder_modal.tsx:210
 msgid "Options"
 msgstr "Tùy chọn"
@@ -821,45 +754,17 @@ msgstr "Độ Phân giải Cực"
 msgid "Power Manager"
 msgstr "Quản lý Pin"
 
-#: website/src/_includes/home.tsx:38
-msgid "Prayer Times"
-msgstr "Giờ cầu nguyện"
-
 #: src/screens/home/index.tsx:145
 msgid "Prev Day"
 msgstr "Ngày Trước"
-
-#: website/src/_data/navigation.ts:5
-#: website/src/_includes/privacy-policy.tsx:19
-#: website/src/_includes/privacy-policy.tsx:37
-msgid "Privacy Policy"
-msgstr "Chính sách bảo mật"
-
-#. Max. 80 characters
-#: fastlane/update/update.ts:16
-#: website/src/_includes/home.tsx:17
-#: website/src/_includes/privacy-policy.tsx:24
-msgid "Privacy-first open-source muslim Adhan (islamic prayer times) and qibla app"
-msgstr "Ứng dụng Azan (giờ lễ nguyện đạo Hồi) và qibla nguồn mở ưu tiên quyền riêng tư"
-
-#: fastlane/update/update.ts:67
-#: website/src/_includes/home.tsx:98
-msgid "Qada counter"
-msgstr "Bộ đếm Qada"
 
 #: src/adhan/calculation_methods.ts:76
 msgid "Qatar"
 msgstr "Ca-ta"
 
 #: src/screens/qibla_finder_compass/index.tsx:144
-#: website/src/_includes/home.tsx:38
 msgid "Qibla"
 msgstr "Qibla"
-
-#: fastlane/update/update.ts:65
-#: website/src/_includes/home.tsx:97
-msgid "Qibla finder"
-msgstr "Tìm Qibla"
 
 #: src/screens/qibla_finder/index.tsx:24
 msgid "Qibla finder needs location service. If not enabled, location from app settings will be used."
@@ -920,8 +825,8 @@ msgstr "Các thiết bị Samsung có Trình quản lý nguồn tùy chỉnh c�
 msgid "Saturday"
 msgstr "Thứ 7"
 
-#: src/components/audio_picker.tsx:393
 #: src/components/AutocompleteInput.tsx:166
+#: src/components/audio_picker.tsx:393
 msgid "Search"
 msgstr "Tìm kiếm"
 
@@ -942,16 +847,6 @@ msgstr "Chọn âm báo Azan khác nhau cho Fajr namaz"
 #: src/screens/settings_adhan/index.tsx:226
 msgid "Selecting a name is required"
 msgstr "Chọn tên là bắt buộc"
-
-#: fastlane/update/update.ts:49
-#: website/src/_includes/home.tsx:85
-msgid "Set custom Adhan audio"
-msgstr "Đặt âm báo Azan tùy chỉnh"
-
-#: fastlane/update/update.ts:61
-#: website/src/_includes/home.tsx:95
-msgid "Set reminders before or after a prayer time"
-msgstr "Đặt lời nhắc trước hoặc sau giờ cầu nguyện"
 
 #: src/screens/settings_calculation/index.tsx:170
 msgid "Shafaq"
@@ -1024,11 +919,6 @@ msgstr "Hiện thông báo báo thức sắp tới?"
 msgid "Silent"
 msgstr "Im lặng"
 
-#: fastlane/update/update.ts:74
-#: website/src/_includes/home.tsx:110
-msgid "Since we don't use any kind of tracker or crash analytics, please report any problem or suggestion you have on our github repo"
-msgstr "Vì chúng tôi không sử dụng bất kỳ loại trình theo dõi hoặc phân tích sự cố nào, vui lòng báo cáo bất kỳ sự cố hoặc đề xuất nào bạn có trên repo github của chúng tôi"
-
 #: src/adhan/calculation_methods.ts:82
 msgid "Singapore"
 msgstr "Singapore"
@@ -1036,10 +926,6 @@ msgstr "Singapore"
 #: src/intro/intro.tsx:100
 msgid "Skip"
 msgstr "Bỏ qua"
-
-#: website/src/_includes/privacy-policy.tsx:54
-msgid "Software License"
-msgstr "Bản quyền phần mềm"
 
 #: src/screens/settings_display/calendar_secondary_settings.tsx:31
 msgid "Solar Hijri"
@@ -1099,10 +985,6 @@ msgstr "Vùng Vịnh (Dubai)"
 #: src/screens/settings_calculation/calendar_settings.tsx:45
 msgid "The app's lunar calendar is pre-calculated and may not be accurate because it isn't based on moon sightings. This is especially important to note for the start and end of Ramadan."
 msgstr "Lịch âm của ứng dụng được tính toán trước và có thể không chính xác vì nó không dựa trên các lần ngắm mặt trăng. Điều này đặc biệt quan trọng cần lưu ý lúc bắt đầu và kết thúc tháng Ramadan."
-
-#: website/src/_includes/privacy-policy.tsx:71
-msgid "The text found in this website and in the app may not be accurate in other languages, so in any case, only English version should be considered."
-msgstr "Văn bản tìm thấy trên trang web này và trong ứng dụng có thể không chính xác bằng các ngôn ngữ khác, vì vậy trong mọi trường hợp, chỉ nên xem xét phiên bản tiếng Anh."
 
 #: src/screens/settings_display/calendar_secondary_settings.tsx:23
 msgid "The type of calendar that is shown on top of home screen and beside lunar date in widgets"
@@ -1289,15 +1171,6 @@ msgstr "Bạn có thể ẩn lần cầu nguyện không muốn thấy ở màn 
 #: src/screens/settings_widget/hide_widget_prayer_settings.tsx:60
 msgid "You can hide prayer times you don't want to see in the widget here:"
 msgstr "Bạn có thể ẩn lần cầu nguyện mà bạn không muốn thấy trong tiện ích tại đây:"
-
-#: fastlane/update/update.ts:47
-#: website/src/_includes/home.tsx:83
-msgid "You can search for your location offline Or use GPS"
-msgstr "Bạn có thể tìm kiếm vị trí của mình ngoại tuyến Hoặc sử dụng GPS"
-
-#: website/src/_includes/privacy-policy.tsx:66
-msgid "You should have received a copy of the GNU Affero General Public License along with this program. If not, see https://www.gnu.org/licenses/."
-msgstr "Bạn sẽ nhận được một bản sao Giấy phép Công cộng GNU Affero cùng với chương trình này. Nếu không, hãy xem https://www.gnu.org/licenses/."
 
 #: src/components/audio_picker.tsx:84
 msgid "Your sounds"

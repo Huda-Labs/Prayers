@@ -53,11 +53,6 @@ msgstr "Abyad"
 msgid "Accuracy"
 msgstr "Accuracy"
 
-#: fastlane/update/update.ts:41
-#: website/src/_includes/home.tsx:79
-msgid "Ad-Free"
-msgstr "Ad-Free"
-
 #: src/screens/settings_fix_common_problems/adaptive_charging_toggle.tsx:15
 msgid "Adaptive Charging"
 msgstr "Adaptive Charging"
@@ -106,41 +101,13 @@ msgstr "Advanced Calculation Settings"
 msgid "Ahmer"
 msgstr "Ahmer"
 
-#. Don't translate Al-Azan name
-#: website/src/_includes/home.tsx:36
-#: website/src/_includes/privacy-policy.tsx:13
-msgid "Al-Azan"
-msgstr "Al-Azan"
-
-#. Max. 30 characters
-#: fastlane/update/update.ts:27
-msgid "Al-Azan - Prayer Times"
-msgstr "Al-Azan - Prayer Times"
-
-#: website/src/_includes/privacy-policy.tsx:61
-msgid "Al-Azan is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU Affero General Public License for more details."
-msgstr "Al-Azan is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU Affero General Public License for more details."
-
-#: website/src/_includes/privacy-policy.tsx:56
-msgid "Al-Azan is free software: you can redistribute it and/or modify it under the terms of the GNU Affero General Public License (v3.0) as published by the Free Software Foundation."
-msgstr "Al-Azan is free software: you can redistribute it and/or modify it under the terms of the GNU Affero General Public License (v3.0) as published by the Free Software Foundation."
-
 #: src/utils/permission.ts:165
 msgid "Alarms Permission"
 msgstr "Alarms Permission"
 
-#: website/src/_includes/privacy-policy.tsx:39
-msgid "All data provided to Al-Azan is only stored locally in your device. Your data is not uploaded anywhere. The developers of Al-Azan do not have access to it. Your data is not shared with any third parties. Al-Azan does not include any advertisement libraries or any 3rd party tracking (analytics) code, such as Google Analytics or Facebook SDK."
-msgstr "All data provided to Al-Azan is only stored locally in your device. Your data is not uploaded anywhere. The developers of Al-Azan do not have access to it. Your data is not shared with any third parties. Al-Azan does not include any advertisement libraries or any 3rd party tracking (analytics) code, such as Google Analytics or Facebook SDK."
-
 #: src/screens/settings_adhan/index.tsx:76
 msgid "An error occured while playing the current track"
 msgstr "An error occured while playing the current track"
-
-#: fastlane/update/update.ts:39
-#: website/src/_includes/home.tsx:77
-msgid "App features"
-msgstr "App features"
 
 #: src/screens/settings_adhan/adhan_list_item.tsx:103
 msgid "Are you sure you want to delete \"{0}\" ?"
@@ -166,7 +133,6 @@ msgstr "At least one prayer time must be shown"
 #: src/screens/settings_calculation/calendar_settings.tsx:44
 #: src/utils/ramadan.ts:74
 #: src/utils/ramadan.ts:95
-#: website/src/_includes/privacy-policy.tsx:48
 msgid "Attention"
 msgstr "Attention"
 
@@ -326,11 +292,6 @@ msgstr "Dismiss"
 msgid "Diyanet İşleri Başkanlığı, Turkey"
 msgstr "Diyanet İşleri Başkanlığı, Turkey"
 
-#: fastlane/update/update.ts:43
-#: website/src/_includes/home.tsx:80
-msgid "Doesn't use any kind of trackers"
-msgstr "Doesn't use any kind of trackers"
-
 #: src/utils/permission.ts:44
 #: src/utils/permission.ts:169
 #: src/utils/permission.ts:201
@@ -453,11 +414,6 @@ msgstr "Hidden?"
 msgid "Hide Prayer Times"
 msgstr "Hide Prayer Times"
 
-#: fastlane/update/update.ts:59
-#: website/src/_includes/home.tsx:94
-msgid "Hide times you don't need"
-msgstr "Hide times you don't need"
-
 #: src/screens/qibla_finder_compass/accuracy_indicator.tsx:26
 msgid "High"
 msgstr "High"
@@ -471,18 +427,8 @@ msgid "Highlight current prayer"
 msgstr "Highlight current prayer"
 
 #: src/screens/settings_about/index.tsx:34
-#: website/src/_data/navigation.ts:2
 msgid "Home"
 msgstr "Home"
-
-#: fastlane/update/update.ts:63
-#: website/src/_includes/home.tsx:96
-msgid "Homescreen and notification Widgets"
-msgstr "Homescreen and notification Widgets"
-
-#: website/src/_includes/privacy-policy.tsx:43
-msgid "However, When using online services, such as searching for location coordinates by name or Qibla map, app may transmit minimum necessary data that may or may not uniquely identify you. Please keep this in mind while using the app."
-msgstr "However, When using online services, such as searching for location coordinates by name or Qibla map, app may transmit minimum necessary data that may or may not uniquely identify you. Please keep this in mind while using the app."
 
 #: src/screens/qibla_finder/index.tsx:98
 msgid "I Understand"
@@ -495,10 +441,6 @@ msgstr "Important"
 #: src/screens/settings_notifications/notify_next_adhan_setting.tsx:22
 msgid "If enabled, when a notification is shown, it will contain info for the next prayer time"
 msgstr "If enabled, when a notification is shown, it will contain info for the next prayer time"
-
-#: website/src/_includes/privacy-policy.tsx:49
-msgid "If you have activated “Backup & Reset” in your phone settings (Settings / Backup & Reset / Back up my data), you should be aware that Android itself (not Al-Azan) will periodically save a copy of your phone’s data in Google’s servers. This allows Android to recover your data in case your device gets damaged, or you purchase a new device. The developers of Al-Azan do not have access to this data."
-msgstr "If you have activated “Backup & Reset” in your phone settings (Settings / Backup & Reset / Back up my data), you should be aware that Android itself (not Al-Azan) will periodically save a copy of your phone’s data in Google’s servers. This allows Android to recover your data in case your device gets damaged, or you purchase a new device. The developers of Al-Azan do not have access to this data."
 
 #: src/screens/settings_fix_common_problems/index.tsx:103
 msgid "If you still had problem with app stopping after some time, please visit dontkillmyapp.com for more solutions."
@@ -540,11 +482,6 @@ msgstr "Internet connection"
 #: src/screens/qibla_finder/index.tsx:49
 msgid "Internet connection is necessary for qibla map to work. Please enable your wifi or mobile data and try again."
 msgstr "Internet connection is necessary for qibla map to work. Please enable your wifi or mobile data and try again."
-
-#: fastlane/update/update.ts:69
-#: website/src/_includes/home.tsx:100
-msgid "Is localized in English, Persian, Arabic, Turkish, Indonesian, French, Urdu, Hindi, German, Bosnian, Vietnamese, Bangla"
-msgstr "Is localized in English, Persian, Arabic, Turkish, Indonesian, French, Urdu, Hindi, German, Bosnian, Vietnamese, Bangla"
 
 #: src/screens/settings_calculation/calendar_settings.tsx:31
 msgid "Islamic"
@@ -703,8 +640,8 @@ msgstr "No"
 msgid "No Data"
 msgstr "No Data"
 
-#: src/components/audio_picker.tsx:415
 #: src/components/AutocompleteInput.tsx:200
+#: src/components/audio_picker.tsx:415
 msgid "No Results"
 msgstr "No Results"
 
@@ -777,16 +714,6 @@ msgstr "Open Battery Optimization Settings"
 msgid "Open Power Manager Settings"
 msgstr "Open Power Manager Settings"
 
-#: fastlane/update/update.ts:71
-#: website/src/_includes/home.tsx:105
-msgid "Open source repository"
-msgstr "Open source repository"
-
-#: fastlane/update/update.ts:45
-#: website/src/_includes/home.tsx:81
-msgid "Open-source"
-msgstr "Open-source"
-
 #: src/screens/settings_reminders/edit_reminder_modal.tsx:210
 msgid "Options"
 msgstr "Options"
@@ -827,45 +754,17 @@ msgstr "Polar Resolution"
 msgid "Power Manager"
 msgstr "Power Manager"
 
-#: website/src/_includes/home.tsx:38
-msgid "Prayer Times"
-msgstr "Prayer Times"
-
 #: src/screens/home/index.tsx:145
 msgid "Prev Day"
 msgstr "Prev Day"
-
-#: website/src/_data/navigation.ts:5
-#: website/src/_includes/privacy-policy.tsx:19
-#: website/src/_includes/privacy-policy.tsx:37
-msgid "Privacy Policy"
-msgstr "Privacy Policy"
-
-#. Max. 80 characters
-#: fastlane/update/update.ts:16
-#: website/src/_includes/home.tsx:17
-#: website/src/_includes/privacy-policy.tsx:24
-msgid "Privacy-first open-source muslim Adhan (islamic prayer times) and qibla app"
-msgstr "Privacy-first open-source muslim Adhan (islamic prayer times) and qibla app"
-
-#: fastlane/update/update.ts:67
-#: website/src/_includes/home.tsx:98
-msgid "Qada counter"
-msgstr "Qada counter"
 
 #: src/adhan/calculation_methods.ts:76
 msgid "Qatar"
 msgstr "Qatar"
 
 #: src/screens/qibla_finder_compass/index.tsx:144
-#: website/src/_includes/home.tsx:38
 msgid "Qibla"
 msgstr "Qibla"
-
-#: fastlane/update/update.ts:65
-#: website/src/_includes/home.tsx:97
-msgid "Qibla finder"
-msgstr "Qibla finder"
 
 #: src/screens/qibla_finder/index.tsx:24
 msgid "Qibla finder needs location service. If not enabled, location from app settings will be used."
@@ -930,8 +829,8 @@ msgstr ""
 msgid "Saturday"
 msgstr "Saturday"
 
-#: src/components/audio_picker.tsx:393
 #: src/components/AutocompleteInput.tsx:166
+#: src/components/audio_picker.tsx:393
 msgid "Search"
 msgstr "Search"
 
@@ -952,16 +851,6 @@ msgstr "Select different Adhan audio for Fajr namaz"
 #: src/screens/settings_adhan/index.tsx:226
 msgid "Selecting a name is required"
 msgstr "Selecting a name is required"
-
-#: fastlane/update/update.ts:49
-#: website/src/_includes/home.tsx:85
-msgid "Set custom Adhan audio"
-msgstr "Set custom Adhan audio"
-
-#: fastlane/update/update.ts:61
-#: website/src/_includes/home.tsx:95
-msgid "Set reminders before or after a prayer time"
-msgstr "Set reminders before or after a prayer time"
 
 #: src/screens/settings_calculation/index.tsx:170
 msgid "Shafaq"
@@ -1034,11 +923,6 @@ msgstr "Show upcoming alarm notification?"
 msgid "Silent"
 msgstr "Silent"
 
-#: fastlane/update/update.ts:74
-#: website/src/_includes/home.tsx:110
-msgid "Since we don't use any kind of tracker or crash analytics, please report any problem or suggestion you have on our github repo"
-msgstr "Since we don't use any kind of tracker or crash analytics, please report any problem or suggestion you have on our github repo"
-
 #: src/adhan/calculation_methods.ts:82
 msgid "Singapore"
 msgstr "Singapore"
@@ -1046,10 +930,6 @@ msgstr "Singapore"
 #: src/intro/intro.tsx:100
 msgid "Skip"
 msgstr "Skip"
-
-#: website/src/_includes/privacy-policy.tsx:54
-msgid "Software License"
-msgstr "Software License"
 
 #: src/screens/settings_display/calendar_secondary_settings.tsx:31
 msgid "Solar Hijri"
@@ -1111,10 +991,6 @@ msgstr "The Gulf Region (Dubai)"
 #: src/screens/settings_calculation/calendar_settings.tsx:45
 msgid "The app's lunar calendar is pre-calculated and may not be accurate because it isn't based on moon sightings. This is especially important to note for the start and end of Ramadan."
 msgstr "The app's lunar calendar is pre-calculated and may not be accurate because it isn't based on moon sightings. This is especially important to note for the start and end of Ramadan."
-
-#: website/src/_includes/privacy-policy.tsx:71
-msgid "The text found in this website and in the app may not be accurate in other languages, so in any case, only English version should be considered."
-msgstr "The text found in this website and in the app may not be accurate in other languages, so in any case, only English version should be considered."
 
 #: src/screens/settings_display/calendar_secondary_settings.tsx:23
 msgid "The type of calendar that is shown on top of home screen and beside lunar date in widgets"
@@ -1301,15 +1177,6 @@ msgstr "You can hide prayer times you don't want to see in the main screen here:
 #: src/screens/settings_widget/hide_widget_prayer_settings.tsx:60
 msgid "You can hide prayer times you don't want to see in the widget here:"
 msgstr "You can hide prayer times you don't want to see in the widget here:"
-
-#: fastlane/update/update.ts:47
-#: website/src/_includes/home.tsx:83
-msgid "You can search for your location offline Or use GPS"
-msgstr "You can search for your location offline Or use GPS"
-
-#: website/src/_includes/privacy-policy.tsx:66
-msgid "You should have received a copy of the GNU Affero General Public License along with this program. If not, see https://www.gnu.org/licenses/."
-msgstr "You should have received a copy of the GNU Affero General Public License along with this program. If not, see https://www.gnu.org/licenses/."
 
 #: src/components/audio_picker.tsx:84
 msgid "Your sounds"

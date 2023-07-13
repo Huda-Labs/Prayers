@@ -6,6 +6,12 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: @lingui/cli\n"
 "Language: bn\n"
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Plural-Forms: \n"
 
 #: src/screens/settings_reminders/edit_reminder_modal.tsx:134
 msgid "10 min"
@@ -46,11 +52,6 @@ msgstr "আবইয়াদ"
 #: src/screens/qibla_finder_compass/accuracy_indicator.tsx:37
 msgid "Accuracy"
 msgstr "যথাযথতা"
-
-#: fastlane/update/update.ts:41
-#: website/src/_includes/home.tsx:79
-msgid "Ad-Free"
-msgstr "বিজ্ঞাপন-মুক্ত"
 
 #: src/screens/settings_fix_common_problems/adaptive_charging_toggle.tsx:15
 msgid "Adaptive Charging"
@@ -100,41 +101,13 @@ msgstr "আরও গণনার সেটিংস"
 msgid "Ahmer"
 msgstr "আহমার"
 
-#. Don't translate Al-Azan name
-#: website/src/_includes/home.tsx:36
-#: website/src/_includes/privacy-policy.tsx:13
-msgid "Al-Azan"
-msgstr "আল-আযান"
-
-#. Max. 30 characters
-#: fastlane/update/update.ts:27
-msgid "Al-Azan - Prayer Times"
-msgstr "আল-আযান - নামাজের সময়সূচি"
-
-#: website/src/_includes/privacy-policy.tsx:61
-msgid "Al-Azan is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU Affero General Public License for more details."
-msgstr "আল-আজান অ্যাপটি এই আশায় বিতরণ করা হয় যে এটি আপনার জন্য উপকারি হবে, কিন্তু কোনো ওয়ারেন্টি নেই; এমনকি একটি বিশেষ উদ্দেশ্যের জন্য ব্যবসায়িকতা বা ফিটনেসের অন্তর্নিহিত কোন ওয়ারেন্টি নেই। আরো বিস্তারিত জানার জন্য GNU Affero জেনারেল পাবলিক লাইসেন্স দেখুন।"
-
-#: website/src/_includes/privacy-policy.tsx:56
-msgid "Al-Azan is free software: you can redistribute it and/or modify it under the terms of the GNU Affero General Public License (v3.0) as published by the Free Software Foundation."
-msgstr "আল-আজান একটি বিনামূল্যের সফ্টওয়্যার: আপনি ফ্রি সফটওয়্যার ফাউন্ডেশন দ্বারা প্রকাশিত GNU Affero জেনারেল পাবলিক লাইসেন্স (v3.0) এর শর্তাবলীর অধীনে এটিকে পুনরায় বিতরণ এবং/অথবা সংশোধন করতে পারেন।"
-
 #: src/utils/permission.ts:165
 msgid "Alarms Permission"
 msgstr "অ্যালার্মের অনুমতি"
 
-#: website/src/_includes/privacy-policy.tsx:39
-msgid "All data provided to Al-Azan is only stored locally in your device. Your data is not uploaded anywhere. The developers of Al-Azan do not have access to it. Your data is not shared with any third parties. Al-Azan does not include any advertisement libraries or any 3rd party tracking (analytics) code, such as Google Analytics or Facebook SDK."
-msgstr "আল-আজানে প্রদত্ত সমস্ত ডেটা শুধুমাত্র আপনার ডিভাইসে স্থানীয়ভাবে সংরক্ষণ করা হয়। আপনার ডেটা কোথাও আপলোড করা হয় না। আল-আজানের বিকাশকারীদের এটিতে অ্যাক্সেস নেই। আপনার তথ্য কোনো তৃতীয় পক্ষের সাথে ভাগ করা হয় না. আল-আজান কোনো বিজ্ঞাপন লাইব্রেরি বা কোনো 3য় পক্ষের ট্র্যাকিং (বিশ্লেষণ) কোড অন্তর্ভুক্ত করে না, যেমন Google Analytics বা Facebook SDK।"
-
 #: src/screens/settings_adhan/index.tsx:76
 msgid "An error occured while playing the current track"
 msgstr "বর্তমান সাউন্ড ট্র্যাকটি চালানোর সময় একটি সমস্যা হয়েছে।"
-
-#: fastlane/update/update.ts:39
-#: website/src/_includes/home.tsx:77
-msgid "App features"
-msgstr "অ্যাপের বৈশিষ্ট্যসমুহ"
 
 #: src/screens/settings_adhan/adhan_list_item.tsx:103
 msgid "Are you sure you want to delete \"{0}\" ?"
@@ -160,7 +133,6 @@ msgstr "অন্তত একটি নামাজের সময় দে�
 #: src/screens/settings_calculation/calendar_settings.tsx:44
 #: src/utils/ramadan.ts:74
 #: src/utils/ramadan.ts:95
-#: website/src/_includes/privacy-policy.tsx:48
 msgid "Attention"
 msgstr "মনোযোগ"
 
@@ -320,11 +292,6 @@ msgstr "খারিজ"
 msgid "Diyanet İşleri Başkanlığı, Turkey"
 msgstr "Diyanet İşleri Başkanlığı, তুরস্ক"
 
-#: fastlane/update/update.ts:43
-#: website/src/_includes/home.tsx:80
-msgid "Doesn't use any kind of trackers"
-msgstr "কোনো ধরনের ট্র্যাকার ব্যবহার করে না"
-
 #: src/utils/permission.ts:44
 #: src/utils/permission.ts:169
 #: src/utils/permission.ts:201
@@ -447,11 +414,6 @@ msgstr "লুকানো?"
 msgid "Hide Prayer Times"
 msgstr "নামাজের সময়সূচি লুকান"
 
-#: fastlane/update/update.ts:59
-#: website/src/_includes/home.tsx:94
-msgid "Hide times you don't need"
-msgstr "অপ্রয়জনিয় সময় লুকান"
-
 #: src/screens/qibla_finder_compass/accuracy_indicator.tsx:26
 msgid "High"
 msgstr "উচ্চ"
@@ -465,18 +427,8 @@ msgid "Highlight current prayer"
 msgstr "বর্তমান সালাত হাইলাইট করুন"
 
 #: src/screens/settings_about/index.tsx:34
-#: website/src/_data/navigation.ts:2
 msgid "Home"
 msgstr "হোম"
-
-#: fastlane/update/update.ts:63
-#: website/src/_includes/home.tsx:96
-msgid "Homescreen and notification Widgets"
-msgstr "হোমস্ক্রিন এবং বিজ্ঞপ্তি উইজেটসমুহ"
-
-#: website/src/_includes/privacy-policy.tsx:43
-msgid "However, When using online services, such as searching for location coordinates by name or Qibla map, app may transmit minimum necessary data that may or may not uniquely identify you. Please keep this in mind while using the app."
-msgstr "যাইহোক, অনলাইন পরিষেবাগুলি ব্যবহার করার সময়, যেমন নাম বা কিবলা মানচিত্রের দ্বারা অবস্থান স্থানাঙ্ক অনুসন্ধান করা, অ্যাপটি ন্যূনতম প্রয়োজনীয় ডেটা প্রেরণ করতে পারে যা আপনাকে অনন্যভাবে সনাক্ত করতে পারে বা নাও করতে পারে। অ্যাপটি ব্যবহার করার সময় দয়া করে এটি মনে রাখবেন।"
 
 #: src/screens/qibla_finder/index.tsx:98
 msgid "I Understand"
@@ -489,10 +441,6 @@ msgstr "গুরুত্বপূর্ণ"
 #: src/screens/settings_notifications/notify_next_adhan_setting.tsx:22
 msgid "If enabled, when a notification is shown, it will contain info for the next prayer time"
 msgstr "যদি সক্রিয় থাকে, যখন একটি নোটিফিকেশন দেখানো হয়, এতে পরবর্তী ্সালাতের সময়ের জন্য তথ্য থাকবে"
-
-#: website/src/_includes/privacy-policy.tsx:49
-msgid "If you have activated “Backup & Reset” in your phone settings (Settings / Backup & Reset / Back up my data), you should be aware that Android itself (not Al-Azan) will periodically save a copy of your phone’s data in Google’s servers. This allows Android to recover your data in case your device gets damaged, or you purchase a new device. The developers of Al-Azan do not have access to this data."
-msgstr "আপনি যদি আপনার ফোন সেটিংসে \"ব্যাকআপ এবং রিসেট\" সক্রিয় করে থাকেন (সেটিংস / ব্যাকআপ এবং রিসেট / আমার ডেটা ব্যাক আপ করুন), আপনার সচেতন হওয়া উচিত যে অ্যান্ড্রয়েড নিজেই (আল-আজান নয়) পর্যায়ক্রমে Google-এ আপনার ফোনের ডেটার একটি অনুলিপি সংরক্ষণ করবে তাদের সার্ভারে। আপনার ডিভাইস ক্ষতিগ্রস্ত হলে বা আপনি একটি নতুন ডিভাইস কিনলে এটি অ্যান্ড্রয়েডকে আপনার ডেটা পুনরুদ্ধার করতে দেয়। আল-আজানের ডেভেলপারদের এই ডেটাতে অ্যাক্সেস নেই।"
 
 #: src/screens/settings_fix_common_problems/index.tsx:103
 msgid "If you still had problem with app stopping after some time, please visit dontkillmyapp.com for more solutions."
@@ -633,11 +581,6 @@ msgstr "অবৈধ দ্রাঘিমাংশ"
 msgid "Low"
 msgstr "কম"
 
-#: fastlane/update/update.ts:55
-#: website/src/_includes/home.tsx:92
-msgid "Many options for Adhan (اذان) calculation"
-msgstr "আযান (اذان) গণনার পদ্ধতিসমূহ"
-
 #: src/screens/qibla_finder_compass/accuracy_indicator.tsx:22
 msgid "Medium"
 msgstr "মাধ্যম"
@@ -697,8 +640,8 @@ msgstr "না"
 msgid "No Data"
 msgstr "কোন ডেটা নেই"
 
-#: src/components/audio_picker.tsx:415
 #: src/components/AutocompleteInput.tsx:200
+#: src/components/audio_picker.tsx:415
 msgid "No Results"
 msgstr "কোন ফলাফল নেই"
 
@@ -771,16 +714,6 @@ msgstr "ব্যাটারি অপ্টিমাইজেশান সে�
 msgid "Open Power Manager Settings"
 msgstr "পাওয়ার ম্যানেজার সেটিংস খুলুন"
 
-#: fastlane/update/update.ts:71
-#: website/src/_includes/home.tsx:105
-msgid "Open source repository"
-msgstr "ওপেন সোর্স রিপোজিটরি"
-
-#: fastlane/update/update.ts:45
-#: website/src/_includes/home.tsx:81
-msgid "Open-source"
-msgstr "ওপেন সোর্স"
-
 #: src/screens/settings_reminders/edit_reminder_modal.tsx:210
 msgid "Options"
 msgstr "অপশনসমূহ"
@@ -821,38 +754,15 @@ msgstr "পোলার রেজোলিউশন"
 msgid "Power Manager"
 msgstr "পাওয়ার ম্যানেজার"
 
-#: website/src/_includes/home.tsx:38
-msgid "Prayer Times"
-msgstr "সালাতের সময়"
-
 #: src/screens/home/index.tsx:145
 msgid "Prev Day"
 msgstr "আগের দিন"
-
-#: website/src/_data/navigation.ts:5
-#: website/src/_includes/privacy-policy.tsx:19
-#: website/src/_includes/privacy-policy.tsx:37
-msgid "Privacy Policy"
-msgstr "গোপনীয়তা পলিসি"
-
-#. Max. 80 characters
-#: fastlane/update/update.ts:16
-#: website/src/_includes/home.tsx:17
-#: website/src/_includes/privacy-policy.tsx:24
-msgid "Privacy-first open-source muslim Adhan (islamic prayer times) and qibla app"
-msgstr "গোপনীয়তা-প্রথম ওপেন সোর্স মুসলিম আযান (ইসলামিক নামাজের সময়) এবং কিবলা অ্যাপ"
-
-#: fastlane/update/update.ts:67
-#: website/src/_includes/home.tsx:98
-msgid "Qada counter"
-msgstr "কাযা কাউন্টার"
 
 #: src/adhan/calculation_methods.ts:76
 msgid "Qatar"
 msgstr "কাতার"
 
 #: src/screens/qibla_finder_compass/index.tsx:144
-#: website/src/_includes/home.tsx:38
 msgid "Qibla"
 msgstr "কিবলা"
 
@@ -920,8 +830,8 @@ msgstr "স্যামসাং ডিভাইসগুলির নিজস�
 msgid "Saturday"
 msgstr "শনিবার"
 
-#: src/components/audio_picker.tsx:393
 #: src/components/AutocompleteInput.tsx:166
+#: src/components/audio_picker.tsx:393
 msgid "Search"
 msgstr "অনুসন্ধান করুন"
 
@@ -942,16 +852,6 @@ msgstr "ফজর নামাজের জন্য বিভিন্ন আ�
 #: src/screens/settings_adhan/index.tsx:226
 msgid "Selecting a name is required"
 msgstr "একটি নাম নির্বাচন করা প্রয়োজন"
-
-#: fastlane/update/update.ts:49
-#: website/src/_includes/home.tsx:85
-msgid "Set custom Adhan audio"
-msgstr "কাস্টম আযান অডিও সেট করুন"
-
-#: fastlane/update/update.ts:61
-#: website/src/_includes/home.tsx:95
-msgid "Set reminders before or after a prayer time"
-msgstr "প্রার্থনার আগে বা পরে রিমাইন্ডার সেট করুন"
 
 #: src/screens/settings_calculation/index.tsx:170
 msgid "Shafaq"
@@ -1021,11 +921,6 @@ msgstr "আসন্ন অ্যালার্মের নোটিফিক�
 msgid "Silent"
 msgstr "নীরব"
 
-#: fastlane/update/update.ts:74
-#: website/src/_includes/home.tsx:110
-msgid "Since we don't use any kind of tracker or crash analytics, please report any problem or suggestion you have on our github repo"
-msgstr "যেহেতু আমরা কোনো ধরনের ট্র্যাকার বা ক্র্যাশ অ্যানালিটিক্স ব্যবহার করি না, তাই অনুগ্রহ করে আমাদের গিটহাব রেপোতে আপনার কোনো সমস্যা বা পরামর্শ জানান"
-
 #: src/adhan/calculation_methods.ts:82
 msgid "Singapore"
 msgstr "সিঙ্গাপুর"
@@ -1033,10 +928,6 @@ msgstr "সিঙ্গাপুর"
 #: src/intro/intro.tsx:100
 msgid "Skip"
 msgstr "এড়িয়ে যান"
-
-#: website/src/_includes/privacy-policy.tsx:54
-msgid "Software License"
-msgstr "সফ্টওয়্যার লাইসেন্স"
 
 #: src/screens/settings_display/calendar_secondary_settings.tsx:31
 msgid "Solar Hijri"
@@ -1093,10 +984,6 @@ msgstr "উপসাগরীয় অঞ্চল (দুবাই)"
 #: src/screens/settings_calculation/calendar_settings.tsx:45
 msgid "The app's lunar calendar is pre-calculated and may not be accurate because it isn't based on moon sightings. This is especially important to note for the start and end of Ramadan."
 msgstr "অ্যাপটির চন্দ্র ক্যালেন্ডার পূর্ব-গণনা করা এবং সঠিক নাও হতে পারে কারণ এটি চাঁদ দেখার উপর ভিত্তি করে নয়। রমজানের শুরু এবং শেষের জন্য এটি বিশেষভাবে গুরুত্বপূর্ণ।"
-
-#: website/src/_includes/privacy-policy.tsx:71
-msgid "The text found in this website and in the app may not be accurate in other languages, so in any case, only English version should be considered."
-msgstr "এই ওয়েবসাইট এবং অ্যাপে পাওয়া টেক্সট অন্য ভাষায় সঠিক নাও হতে পারে, তাই যেকোনো ক্ষেত্রেই শুধুমাত্র ইংরেজি সংস্করণ বিবেচনা করা উচিত।"
 
 #: src/screens/settings_display/calendar_secondary_settings.tsx:23
 msgid "The type of calendar that is shown on top of home screen and beside lunar date in widgets"
@@ -1283,15 +1170,6 @@ msgstr "আপনি এখানে প্রধান পর্দায় �
 #: src/screens/settings_widget/hide_widget_prayer_settings.tsx:60
 msgid "You can hide prayer times you don't want to see in the widget here:"
 msgstr "আপনি এখানে যে সমস্ত সালাতের সময়গুলি উইজেটে দেখতে চান না তা লুকিয়ে রাখতে পারেন:"
-
-#: fastlane/update/update.ts:47
-#: website/src/_includes/home.tsx:83
-msgid "You can search for your location offline Or use GPS"
-msgstr "আপনি অফলাইনে আপনার অবস্থান অনুসন্ধান করতে পারেন বা GPS ব্যবহার করতে পারেন৷"
-
-#: website/src/_includes/privacy-policy.tsx:66
-msgid "You should have received a copy of the GNU Affero General Public License along with this program. If not, see https://www.gnu.org/licenses/."
-msgstr "এই প্রোগ্রামের সাথে আপনার GNU Affero জেনারেল পাবলিক লাইসেন্সের একটি অনুলিপি পাবেন। না পেলে, https://www.gnu.org/licenses/ দেখুন।"
 
 #: src/components/audio_picker.tsx:84
 msgid "Your sounds"
