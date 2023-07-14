@@ -388,3 +388,16 @@ export const WeekDays: Record<WeekDayName, WeekDayIndex> &
   5: 'friday',
   6: 'saturday',
 };
+
+export function isTodayFriday(date: Date): boolean {
+  const today = new Date(date);
+  return today.getDay() === 5;
+}
+
+export function isUsing24HourTimeFormat(): boolean {
+  const currentTime = new Date().toLocaleTimeString().toLowerCase();
+  const is12HourTimeFormat = ['am', 'pm'].some(period =>
+    currentTime.includes(period),
+  );
+  return !is12HourTimeFormat;
+}

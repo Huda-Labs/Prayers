@@ -130,10 +130,10 @@ export const settings = createStore<SettingsStore>()(
       HIDDEN_WIDGET_PRAYERS: [Prayer.Sunset, Prayer.Midnight, Prayer.Tahajjud],
       ADHAN_VOLUME: 70,
       SHOW_WIDGET: false,
-      SHOW_WIDGET_COUNTDOWN: false,
+      SHOW_WIDGET_COUNTDOWN: true,
       ADAPTIVE_WIDGETS: false,
       // DISPLAY
-      IS_24_HOUR_FORMAT: true,
+      IS_24_HOUR_FORMAT: false,
       NUMBERING_SYSTEM: '',
       HIGHLIGHT_CURRENT_PRAYER: false,
 

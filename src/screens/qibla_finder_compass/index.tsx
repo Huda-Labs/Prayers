@@ -10,6 +10,7 @@ import {
   Text,
   Button,
   Spinner,
+  ScrollView,
 } from 'native-base';
 import {useCallback, useEffect, useMemo, useRef, useState} from 'react';
 import {
@@ -17,6 +18,7 @@ import {
   Image,
   TextInput as NativeTextInput,
   ToastAndroid,
+  RefreshControl,
 } from 'react-native';
 import LocationProvider from 'react-native-get-location';
 import {LocationSearchingIcon} from '@/assets/icons/material_icons/location_searching';
@@ -136,99 +138,114 @@ export function QiblaCompass({route}: Props) {
     return () => sub.remove();
   }, []);
 
+  const [refreshing, setRefreshing] = useState(false);
+
+  const onRefresh = useCallback(() => {
+    setRefreshing(true);
+    onRefreshLocationPressed();
+    setTimeout(() => {
+      setRefreshing(false);
+    }, 2000);
+  }, [onRefreshLocationPressed]);
+
   return (
-    <Flex safeArea py="2" flexDirection="column">
-      <HStack justifyContent="space-between" px="3" mb="4">
-        <AccuracyIndicator accuracy={accuracy} />
-        <Text>
-          {t`Qibla`}
-          {': '}
-          {staticQiblaDegree}
-          {'\u00B0 '}
-          {t`from North`}
-        </Text>
-      </HStack>
-      <HStack px="3" alignItems="center">
-        <Text mr="2">
-          {t`Location`}
-          {': '}
-          {fetchedCoords
-            ? fetchedCoords.lat.toFixed(2) +
-              ', ' +
-              fetchedCoords.long.toFixed(2)
-            : t`from settings`}
-        </Text>
-        <Button
-          size="sm"
-          p="1"
-          variant="outline"
-          onPress={onRefreshLocationPressed}
-          disabled={gettingLocation}>
-          {gettingLocation ? (
-            <Spinner accessibilityLabel={t`Getting coordinates`} />
-          ) : fetchedCoords ? (
-            <MyLocationIcon size="md" />
-          ) : (
-            <LocationSearchingIcon size="md" />
-          )}
-        </Button>
-      </HStack>
-      <Flex
-        position="relative"
-        justifyContent="center"
-        alignItems="center"
-        zIndex={-1}
-        my="5">
-        <Image
-          ref={compassImgRef}
-          source={
-            colorMode === 'dark'
-              ? require('@/assets/compass/compass_base_dark.png')
-              : require('@/assets/compass/compass_base_light.png')
-          }
-          style={{
-            [lockedVariableName]: dimensions[lockedVariableName],
-            [unlockedVariableName]: dimensions[lockedVariableName],
-            resizeMode: 'contain',
-          }}
-        />
-        <View
-          position="absolute"
-          left={0}
-          top={0}
-          right={0}
-          bottom={0}
+    <ScrollView
+      refreshControl={
+        <RefreshControl refreshing={refreshing} onRefresh={onRefresh} />
+      }>
+      <Flex safeArea py="2" flexDirection="column">
+        <HStack justifyContent="space-between" px="3" mb="4">
+          <AccuracyIndicator accuracy={accuracy} />
+          <Text>
+            {t`Qibla`}
+            {': '}
+            {staticQiblaDegree}
+            {'\u00B0 '}
+            {t`from North`}
+          </Text>
+        </HStack>
+        <HStack px="3" alignItems="center">
+          <Text mr="2">
+            {t`Location`}
+            {': '}
+            {fetchedCoords
+              ? fetchedCoords.lat.toFixed(2) +
+                ', ' +
+                fetchedCoords.long.toFixed(2)
+              : t`from settings`}
+          </Text>
+          <Button
+            size="sm"
+            p="1"
+            variant="outline"
+            onPress={onRefreshLocationPressed}
+            disabled={gettingLocation}>
+            {gettingLocation ? (
+              <Spinner accessibilityLabel={t`Getting coordinates`} />
+            ) : fetchedCoords ? (
+              <MyLocationIcon size="md" />
+            ) : (
+              <LocationSearchingIcon size="md" />
+            )}
+          </Button>
+        </HStack>
+        <Flex
+          position="relative"
           justifyContent="center"
-          alignItems="center">
-          <Input
-            fontSize="3xl"
-            ref={degreeTextRef}
-            defaultValue="0&deg;"
-            borderWidth={0}
-            textAlign="center"
-            caretHidden={true}
-            isReadOnly={true}
-          />
-        </View>
-        <View
-          position="absolute"
-          left={0}
-          top={0}
-          right={0}
-          bottom={0}
-          justifyContent="center"
-          alignItems="center">
+          alignItems="center"
+          zIndex={-1}
+          my="5">
           <Image
-            ref={qiblaImgRef}
-            source={require('@/assets/compass/qibla_indicator.png')}
+            ref={compassImgRef}
+            source={
+              colorMode === 'dark'
+                ? require('@/assets/compass/compass_base_dark.png')
+                : require('@/assets/compass/compass_base_light.png')
+            }
             style={{
               [lockedVariableName]: dimensions[lockedVariableName],
               [unlockedVariableName]: dimensions[lockedVariableName],
               resizeMode: 'contain',
             }}
           />
-        </View>
+          <View
+            position="absolute"
+            left={0}
+            top={0}
+            right={0}
+            bottom={0}
+            justifyContent="center"
+            alignItems="center">
+            <Input
+              fontSize="3xl"
+              ref={degreeTextRef}
+              defaultValue="0&deg;"
+              borderWidth={0}
+              textAlign="center"
+              caretHidden={true}
+              isReadOnly={true}
+            />
+          </View>
+          <View
+            position="absolute"
+            left={0}
+            top={0}
+            right={0}
+            bottom={0}
+            justifyContent="center"
+            alignItems="center">
+            <Image
+              ref={qiblaImgRef}
+              source={require('@/assets/compass/qibla_indicator.png')}
+              style={{
+                [lockedVariableName]: dimensions[lockedVariableName],
+                [unlockedVariableName]: dimensions[lockedVariableName],
+                resizeMode: 'contain',
+              }}
+            />
+          </View>
+        </Flex>
       </Flex>
-    </Flex>
+    </ScrollView>
   );
 }

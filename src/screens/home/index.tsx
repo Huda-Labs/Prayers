@@ -1,25 +1,25 @@
 import {t} from '@lingui/macro';
+import {difference} from 'lodash';
 import {
   Box,
   Button,
-  Center,
   ChevronLeftIcon,
   ChevronRightIcon,
   Flex,
   HStack,
   ScrollView,
-  Spacer,
   Text,
   ThreeDotsIcon,
 } from 'native-base';
 import {useCallback, useEffect, useState} from 'react';
-import {ImageBackground, RefreshControl} from 'react-native';
+import {RefreshControl} from 'react-native';
 import {useStore} from 'zustand';
 import {shallow} from 'zustand/shallow';
-import {getCurrentPrayer, getNextPrayer, getPrayerTimes} from '@/adhan';
+import {PrayersInOrder, getNextPrayer, getPrayerTimes} from '@/adhan';
 import {AddCircleIcon} from '@/assets/icons/material_icons/add_circle';
 import {ExploreIcon} from '@/assets/icons/material_icons/explore';
 import PrayerTimesBox from '@/components/PrayerTimesBox';
+import CountDown from '@/components/countdown_timer';
 import {isRTL} from '@/i18n';
 
 import {navigate} from '@/navigation/root_navigation';
@@ -28,15 +28,9 @@ import {CachedPrayerTimes} from '@/store/adhan_calc_cache';
 import {homeStore} from '@/store/home';
 import {settings} from '@/store/settings';
 
-import {
-  getArabicDate,
-  getArabicDateInEng,
-  getDayName,
-  getFormattedDate,
-} from '@/utils/date';
+import {getArabicDateInEng, getDayName, getFormattedDate} from '@/utils/date';
 import {askForLocationService} from '@/utils/dialogs';
 import {askPermissions} from '@/utils/permission';
-import CountDown from '@/components/countdown_timer';
 
 type DayDetails = {
   dateString: string;
@@ -117,10 +111,20 @@ export function Home() {
 
   const onRefresh = useCallback(() => {
     setRefreshing(true);
+    updateCurrentDate();
     setTimeout(() => {
       setRefreshing(false);
     }, 2000);
-  }, []);
+  }, [updateCurrentDate]);
+
+  const {HIDDEN_WIDGET_PRAYERS: hiddenPrayers} = settings.getState();
+
+  const visiblePrayerTimes = difference(PrayersInOrder, hiddenPrayers);
+  const nextPrayerTime = getNextPrayer({
+    prayers: visiblePrayerTimes,
+  });
+  const mosqueName = 'Masjid E Bilal';
+  const mosqueLocation = 'Manchester';
 
   return (
     <ScrollView
@@ -137,9 +141,9 @@ export function Home() {
         <HStack alignItems="center">
           <Box p={4}>
             <Text fontSize="xl" bold>
-              {getNextPrayer()?.prayer.capitalizeFirstLetter()}
+              {nextPrayerTime?.prayer.capitalizeFirstLetter()}
             </Text>
-            <CountDown date={getNextPrayer()?.date.toISOString()} />
+            <CountDown date={nextPrayerTime?.date.toISOString()} />
           </Box>
         </HStack>
 
@@ -167,9 +171,9 @@ export function Home() {
         <Box w="100%">
           <Box flex="1" alignItems="flex-end" p={4}>
             <Text fontSize="xs" bold>
-              Masjid E Bilal
+              {mosqueName}
             </Text>
-            <Text fontSize="xxs">Manchester</Text>
+            <Text fontSize="xxs">{mosqueLocation}</Text>
           </Box>
         </Box>
         <HStack
