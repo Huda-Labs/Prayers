@@ -188,6 +188,7 @@ export function getFormattedDate(date: Date) {
   } else {
     return new Intl.DateTimeFormat(SELECTED_LOCALE, {
       day: '2-digit',
+      weekday: 'short',
       month: 'long',
       year: 'numeric',
       calendar: SELECTED_SECONDARY_CALENDAR,

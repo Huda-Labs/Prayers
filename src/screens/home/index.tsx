@@ -43,7 +43,7 @@ function getDayDetails(date: Date): DayDetails {
   return {
     dayName: getDayName(date),
     dateString: getFormattedDate(date),
-    arabicDate: getArabicDate(date),
+    arabicDate: getArabicDateInEng(date),
     isToday: date.toDateString() === new Date().toDateString(),
   };
 }
@@ -240,11 +240,11 @@ export function Home() {
             rounded="md"
             shadow="1"
             onPress={() => {
-              return navigate('QadaCounter');
+              return navigate('RemindersSettings');
             }}>
             <AddCircleIcon size="5xl" />
             <Text color="grey.400" fontSize="md">
-              Tasbi
+              Reminder
             </Text>
           </Button>
         </HStack>

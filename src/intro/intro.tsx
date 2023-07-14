@@ -16,6 +16,7 @@ import {reminderSettings} from '@/store/reminder';
 import {settings, useSettings} from '@/store/settings';
 import {setNextAdhan} from '@/tasks/set_next_adhan';
 import {updateWidgets} from '@/tasks/update_widgets';
+import {isUsing24HourTimeFormat} from '@/utils/date';
 import {sha256} from '@/utils/hash';
 
 const data = [
@@ -47,9 +48,13 @@ function _keyExtractor(item: Item) {
   return item.title();
 }
 
+interface IntroProps {
+  isDarkMode: boolean;
+}
+
 export default Intro;
 
-export function Intro() {
+export function Intro({isDarkMode}: IntroProps) {
   const [, setAppIntroDone] = useSettings('APP_INTRO_DONE');
 
   const [configAlertIsOpen, setConfigAlertIsOpen] = useState(false);
@@ -58,6 +63,7 @@ export function Intro() {
     if (isMinimumSettingsAvailable(calcSettings.getState())) {
       // update settings hash
       settings.setState({
+        IS_24_HOUR_FORMAT: isUsing24HourTimeFormat(),
         CALC_SETTINGS_HASH: sha256(JSON.stringify(calcSettings.getState())),
         ALARM_SETTINGS_HASH: sha256(JSON.stringify(alarmSettings.getState())),
         REMINDER_SETTINGS_HASH: sha256(
@@ -85,15 +91,18 @@ export function Intro() {
   }, [setConfigAlertIsOpen, setAppIntroDone]);
 
   return (
-    <Box flex="1" safeArea>
+    <Box
+      flex="1"
+      safeArea
+      backgroundColor={isDarkMode ? '#4A4A4A' : 'rgb(0, 122, 255)'}>
       <AppIntroSlider<Item>
         keyExtractor={_keyExtractor}
         dotStyle={{borderColor: 'gray', borderWidth: 1}}
         dotClickEnabled={false}
         activeDotStyle={{
-          borderColor: '#22d3ee',
+          borderColor: '#FFD369',
           borderWidth: 1,
-          backgroundColor: '#22d3ee',
+          backgroundColor: '#FFD369',
         }}
         renderNextButton={() => <StepLabel label={t`Next`} />}
         renderDoneButton={() => <StepLabel label={t`Done`} />}

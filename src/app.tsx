@@ -106,7 +106,7 @@ export function App(): JSX.Element {
   }, [appIntroDone]);
 
   if (!appIntroDone) {
-    return <Intro></Intro>;
+    return <Intro isDarkMode={isDarkMode}></Intro>;
   }
 
   const getBackgroundColor = () => {
